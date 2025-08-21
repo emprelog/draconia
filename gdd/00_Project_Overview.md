@@ -19,7 +19,7 @@
 - **Combate Rápido:** Lutas na Arena são baseadas em turnos de 1 minuto.
 
 ## Stack Tecnológica
-- **Backend:** Laravel 12 usando bibliotecas já prontas do laravel para agilizar o desenvolvimento como Laravel Jetstream e o Laravel Breeze
+- **Backend:** Laravel 12 usando bibliotecas já prontas do laravel para agilizar o desenvolvimento, como Laravel Jetstream 
 - **Frontend:** Vue.js 3.5 com Inertia.js v2
 - **UI:** Vuetify 3.9
 - **Real-time:** Laravel Reverb
