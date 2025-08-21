@@ -27,30 +27,30 @@ Route::middleware([
     })->name('fight');
 
     Route::get('/arena', function () {
-        return Inertia::render('Placeholder', ['title' => 'Arena']);
+        return Inertia::render('Arena');
     })->name('arena');
 
     Route::get('/tournament', function () {
-        return Inertia::render('Placeholder', ['title' => 'Tournament']);
+        return Inertia::render('Tournament');
     })->name('tournament');
 
     Route::get('/invasion', function () {
-        return Inertia::render('Placeholder', ['title' => 'Invasion']);
+        return Inertia::render('Invasion');
     })->name('invasion');
 
     Route::get('/inventory', function () {
-        return Inertia::render('Placeholder', ['title' => 'Inventory']);
+        return Inertia::render('Inventory');
     })->name('inventory');
 
     Route::get('/techniques', function () {
-        return Inertia::render('Placeholder', ['title' => 'Techniques']);
+        return Inertia::render('Techniques');
     })->name('techniques');
 
     Route::get('/groups', function () {
-        return Inertia::render('Placeholder', ['title' => 'Groups']);
+        return Inertia::render('Groups');
     })->name('groups');
 
     Route::get('/diary', function () {
-        return Inertia::render('Placeholder', ['title' => 'Diary']);
+        return Inertia::render('Diary');
     })->name('diary');
 });
