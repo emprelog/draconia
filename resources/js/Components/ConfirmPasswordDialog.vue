@@ -1,10 +1,6 @@
 <script setup>
 import { ref, reactive, nextTick } from 'vue';
-import DialogModal from './DialogModal.vue';
-import InputError from './InputError.vue';
-import PrimaryButton from './PrimaryButton.vue';
-import SecondaryButton from './SecondaryButton.vue';
-import TextInput from './TextInput.vue';
+import { useForm } from '@inertiajs/vue3';
 
 const emit = defineEmits(['confirmed']);
 
@@ -71,48 +67,37 @@ const closeModal = () => {
 </script>
 
 <template>
-    <span>
-        <span @click="startConfirmingPassword">
-            <slot />
-        </span>
+    <span @click="startConfirmingPassword">
+        <slot />
+    </span>
 
-        <DialogModal :show="confirmingPassword" @close="closeModal">
-            <template #title>
-                {{ title }}
-            </template>
-
-            <template #content>
+    <v-dialog v-model="confirmingPassword" max-width="500">
+        <v-card>
+            <v-card-title>{{ title }}</v-card-title>
+            <v-card-text>
                 {{ content }}
-
-                <div class="mt-4">
-                    <TextInput
-                        ref="passwordInput"
-                        v-model="form.password"
-                        type="password"
-                        class="mt-1 block w-3/4"
-                        placeholder="Password"
-                        autocomplete="current-password"
-                        @keyup.enter="confirmPassword"
-                    />
-
-                    <InputError :message="form.error" class="mt-2" />
-                </div>
-            </template>
-
-            <template #footer>
-                <SecondaryButton @click="closeModal">
-                    Cancel
-                </SecondaryButton>
-
-                <PrimaryButton
-                    class="ms-3"
-                    :class="{ 'opacity-25': form.processing }"
-                    :disabled="form.processing"
+                <v-text-field
+                    ref="passwordInput"
+                    v-model="form.password"
+                    label="Password"
+                    type="password"
+                    autocomplete="current-password"
+                    @keyup.enter="confirmPassword"
+                    :error-messages="form.error"
+                    class="mt-4"
+                />
+            </v-card-text>
+            <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn @click="closeModal">Cancel</v-btn>
+                <v-btn
+                    color="primary"
+                    :loading="form.processing"
                     @click="confirmPassword"
                 >
                     {{ button }}
-                </PrimaryButton>
-            </template>
-        </DialogModal>
-    </span>
+                </v-btn>
+            </v-card-actions>
+        </v-card>
+    </v-dialog>
 </template>

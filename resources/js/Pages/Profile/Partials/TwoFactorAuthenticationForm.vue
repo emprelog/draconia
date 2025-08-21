@@ -174,15 +174,15 @@ const disableTwoFactorAuthentication = () => {
 
             <div class="mt-5">
                 <div v-if="! twoFactorEnabled">
-                    <ConfirmsPassword @confirmed="enableTwoFactorAuthentication">
+                    <ConfirmPasswordDialog @confirmed="enableTwoFactorAuthentication">
                         <v-btn :loading="enabling" :disabled="enabling">
                             Enable
                         </v-btn>
-                    </ConfirmsPassword>
+                    </ConfirmPasswordDialog>
                 </div>
 
                 <div v-else>
-                    <ConfirmsPassword @confirmed="confirmTwoFactorAuthentication">
+                    <ConfirmPasswordDialog @confirmed="confirmTwoFactorAuthentication">
                         <v-btn
                             v-if="confirming"
                             class="me-3"
@@ -191,27 +191,27 @@ const disableTwoFactorAuthentication = () => {
                         >
                             Confirm
                         </v-btn>
-                    </ConfirmsPassword>
+                    </ConfirmPasswordDialog>
 
-                    <ConfirmsPassword @confirmed="regenerateRecoveryCodes">
+                    <ConfirmPasswordDialog @confirmed="regenerateRecoveryCodes">
                         <v-btn
                             v-if="recoveryCodes.length > 0 && ! confirming"
                             class="me-3"
                         >
                             Regenerate Recovery Codes
                         </v-btn>
-                    </ConfirmsPassword>
+                    </ConfirmPasswordDialog>
 
-                    <ConfirmsPassword @confirmed="showRecoveryCodes">
+                    <ConfirmPasswordDialog @confirmed="showRecoveryCodes">
                         <v-btn
                             v-if="recoveryCodes.length === 0 && ! confirming"
                             class="me-3"
                         >
                             Show Recovery Codes
                         </v-btn>
-                    </ConfirmsPassword>
+                    </ConfirmPasswordDialog>
 
-                    <ConfirmsPassword @confirmed="disableTwoFactorAuthentication">
+                    <ConfirmPasswordDialog @confirmed="disableTwoFactorAuthentication">
                         <v-btn
                             v-if="confirming"
                             :loading="disabling"
@@ -219,9 +219,9 @@ const disableTwoFactorAuthentication = () => {
                         >
                             Cancel
                         </v-btn>
-                    </ConfirmsPassword>
+                    </ConfirmPasswordDialog>
 
-                    <ConfirmsPassword @confirmed="disableTwoFactorAuthentication">
+                    <ConfirmPasswordDialog @confirmed="disableTwoFactorAuthentication">
                         <v-btn
                             v-if="! confirming"
                             color="error"
@@ -230,7 +230,7 @@ const disableTwoFactorAuthentication = () => {
                         >
                             Disable
                         </v-btn>
-                    </ConfirmsPassword>
+                    </ConfirmPasswordDialog>
                 </div>
             </div>
         </v-card-text>
