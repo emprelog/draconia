@@ -23,4 +23,4 @@ Evitar a formação de alianças pré-definidas (colusão) e balancear o poder e
     - Cada Arena gera uma "seed" (semente) única para permitir a replicação dos agrupamentos em caso de auditoria ou análise.
 
 7.  **Merge Global:**
-    - Após 5 minutos, a fase de grupos termina e todas as regras de agrupamento são desfeitas. A batalha se torna um "todos contra todos" global.
+    - Após 5 minutos, a fase de grupos termina e todas as regras de agrupamento são desfeitas. A batalha se torna um "todos contra todos" global. Antes disso, os jogadores só poderão atacar outros jogadores que tiverem no time deles.
