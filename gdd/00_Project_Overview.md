@@ -25,4 +25,4 @@
 - **Real-time:** Laravel Reverb para eventos dentro do jogo
 - **Banco de Dados:** MySQL
 - **Cache/Filas:** Redis
-- **Fonte (Títulos):** Cinzel Regular 400. É a única variante que tem suporte completo ao portuguÊs brasileiro.
+- **Fonte (Títulos):** MedievalSharp
