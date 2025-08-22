@@ -27,7 +27,7 @@
 5.  **Fim de Temporada (15 dias):**
     -   O sistema consolida os pontos e distribui os prêmios.
     -   Os rankings são resetados.
-    -   Itens, técnicas e EVO são mantidos, mas o EVO do jogador cresce com base no desempenho na temporada.
+    -   Itens, técnicas são mantidos.
     -   O Diário publica os campeões e as galerias (Top 30) da temporada que terminou.
 
 ## Roadmap de Entrega

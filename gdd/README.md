@@ -5,7 +5,7 @@ Este diretório contém a documentação de design do jogo (Game Design Document
 ## Estrutura
 
 -   **`00_Project_Overview.md`**: Visão geral, tema, loop de gameplay e stack.
--   **`01_Core_Mechanics.md`**: Detalhes sobre contas, personagens, atributos, moedas e sistema EVO.
+-   **`01_Core_Mechanics.md`**: Detalhes sobre contas, personagens, atributos, moedas.
 -   **`02_Items_and_Evolution.md`**: Regras para itens, loja e sistema de evolução.
 -   **`03_Techniques.md`**: Lista e descrição das técnicas disponíveis.
 -   **`04_Game_Modes.md`**: Modos de jogo sempre ativos (PvP, NPC).

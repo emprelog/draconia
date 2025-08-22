@@ -4,8 +4,8 @@
 Evitar a formação de alianças pré-definidas (colusão) e balancear o poder entre os grupos na fase inicial da Arena.
 
 ## Passos do Algoritmo
-1.  **Buckets de Nível e EVO:**
-    - Os jogadores inscritos são primeiramente separados em "baldes" com base no **Nível** (0-10) e **EVO** (baixo, médio, alto) para garantir que o poder base seja similar.
+1.  **Buckets de Nível:**
+    - Os jogadores inscritos são primeiramente separados em "baldes" com base no **Nível** (0-10) e 
 
 2.  **Regra Rígida de Grupos (Guildas):**
     - O sistema tenta, ao máximo, evitar colocar 2 ou mais jogadores com a mesma sigla de grupo no mesmo time, enquanto houver vagas em outros times.

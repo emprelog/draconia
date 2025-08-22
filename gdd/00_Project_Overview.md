@@ -14,15 +14,15 @@
 7.  **Repetir.**
 
 ## Princípios de Design
-- **Simplicidade:** Interface com poucas telas e decisões claras para o jogador.
+- **Simplicidade:** Interface 100% responsiva com boa usabilidade no desktop e PRINCIPALMENTE em celular, uma vez que os jogadores utilizam 99% das vezes um celular para jogar.
 - **Progressão Visível:** O avanço do jogador é claramente perceptível.
 - **Combate Rápido:** Lutas na Arena são baseadas em turnos de 1 minuto.
 
 ## Stack Tecnológica
-- **Backend:** Laravel 12 usando bibliotecas já prontas do laravel para agilizar o desenvolvimento, como Laravel Jetstream 
-- **Frontend:** Vue.js 3.5 com Inertia.js v2
-- **UI:** Vuetify 3.9
-- **Real-time:** Laravel Reverb
+- **Backend:** Laravel 12 usando bibliotecas já prontas do laravel para agilizar o desenvolvimento, como Laravel Jetstream. 
+- **Frontend:** Vue.js 3.5.19 com Inertia.js v2
+- **UI:** Vuetify 3.9 com dark mode e ligth mode
+- **Real-time:** Laravel Reverb para eventos dentro do jogo
 - **Banco de Dados:** MySQL
 - **Cache/Filas:** Redis
-- **Fonte (Títulos):** Playfair Display
+- **Fonte (Títulos):** Cinzel Regular 400. É a única variante que tem suporte completo ao portuguÊs brasileiro.

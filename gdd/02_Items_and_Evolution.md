@@ -43,7 +43,7 @@ A chance base de sucesso ao evoluir um item.
 
 **Bônus de Chance:**
 - **VIP:** +10%
-- **EVO:** Até +10% (a partir do +6)
+
 
 ## Livro Sagrado
 - Item especial que evolui através do uso, não por elixir.
